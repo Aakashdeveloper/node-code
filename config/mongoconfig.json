@@ -1,0 +1,13 @@
+{
+	"mongo_uri": "localhost:27017",
+	"mongo_host": "localhost",
+	"mongo_port": "27017" ,
+	"mongo_db" : "meetings",
+	"mongo_user" : "",
+	"mongo_password" : "",
+	"mongo_replicaset" : "rs0",
+
+	"db_coll_statistics":"statistics",
+	"db_coll_meetings":"meetings"
+}
+

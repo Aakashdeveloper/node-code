@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dashboard</title>
+    <style>
+    body{
+    font-family:arial;
+    }
+    </style>
+</head>
+<body>
+<div style="text-align:right;"><a href="/logout">Logout</a> </div>
+<table align="center" with="700px" border="1" cellspacing="0" cellpadding="2">
+
+<tr style="font-weight:bold;">
+        <td>MeetingId </td>
+        <td>Date</td>
+        <td>Subject</td>
+        </tr>
+<% stats.forEach(function(stat) { %>
+<tr>
+        <td><%= stat.meetingid %> </td>
+        <td><%= stat.date %> </td>
+        <td><%= stat.subject %> </td>
+        </tr>
+    <% }); %>
+</table>
+</body>
+</html>
